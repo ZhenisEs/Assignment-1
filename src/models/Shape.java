@@ -1,4 +1,5 @@
 package models;
+
 import java.util.ArrayList;
 
 public class Shape {
@@ -13,11 +14,12 @@ public class Shape {
         int numPoints = pointList.size();
 
         for (int i = 0; i < numPoints; i++){
-            int nextIndex = (i+1) % numPoints;
+            Point current = pointList.get(i);
+            Point nextIndex = pointList.get((i +1)%numPoints);
 
-            perimeter += pointList.get(i).distanceTo(pointList.get(nextIndex));
+            perimeter += current.distanceTo(nextIndex);
         }
-            return perimeter;
+        return perimeter;
 
 
     }

@@ -12,7 +12,11 @@ public class Point {
         double distance = Math.sqrt(Math.pow((another.x - this.x), 2) + Math.pow((another.y - this.y), 2));
         return distance;
     }
+
+    /*public toString*/
 }
+
+
 
 
 

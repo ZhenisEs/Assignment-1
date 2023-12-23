@@ -22,5 +22,6 @@ public class MyApplication {
 
        System.out.println(shape.calculatePerimeter())
        ;System.out.println(shape.getLongest());
+       System.out.println((shape.averageSide()));
     }
 }
