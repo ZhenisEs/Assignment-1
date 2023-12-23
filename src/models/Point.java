@@ -13,7 +13,11 @@ public class Point {
         return distance;
     }
 
-    /*public toString*/
+    public String toString() {
+        return "x : " + this.x +
+                "y : " + this.y + "\n";
+    }
+
 }
 
 
